@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Screen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+        .container {
+            width: 600px;
+            margin: 100px auto;
+            background-color: #47eb99;
+            border-radius: 5px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color:#333;
+            color:#ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+
+    </style>
+    </head>
+    <body>
+     <script language="javascript">
+        function checklogin()
+            {
+                username = document.getElementById("username").value;
+                password = document.getElementById("password").value;
+            if( (username=="admin") && (password=="admin@123") )
+            {
+               alert("Welocme To our Website")
+                }
+                else
+                {
+               alert("Invalid Username or Password");
+                }
+            }
+     </script>
+
+    <div class="container">
+        <h1>Admin Login Screen</h1>
+        <form action="#">
+            <label>Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label>Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button input type="button" id="B1" Value="Login"><a href="index.html"  required>Login</a></button>
+            <button input type="reset" id="B2" Value="Clear">Cancel</button>	
+        </form>
+    </div>
+</body>
+</html>
