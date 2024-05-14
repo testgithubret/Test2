@@ -1,2 +1,0 @@
-hello Rpparvez
-yjekj
